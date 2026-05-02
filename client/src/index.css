@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+  input:not([type="checkbox"]) {
+    @apply outline-none focus:ring-1 border border-gray-300 focus:ring-[#4a6aaa] focus:border-[#2d4a8a] rounded-lg;
+  }
+  textarea {
+    @apply outline-none focus:ring-1 border border-gray-300 focus:ring-[#4a6aaa] focus:border-[#2d4a8a] rounded-lg resize-none;
+  }
+}
